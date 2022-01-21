@@ -1,0 +1,17 @@
+# Log into Azure account through Visual Studio Code or Windows Terminal
+Connect-AzAccount # Provide Credentials
+
+# 1st must create Resource Group if not already specified.  Both -Name and -Location are positional parameter's (optional)
+# https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-powershell
+New-AzResourceGroup -Name Example -Location eastus   # to delete, Remove-AzResourceGroup
+
+# 
+New-AzResourceGroupDeployment `
+    -ResourceGroupName Example `
+    -TemplateUri #use RAW http from GitHub
+
+
+# Vnet template works
+
+# load balancer, not yet.  Depends on - ONLY references whats in Template.  
+# Can delete DependsOn, and won't break template, just put lower in template.  May have to run template twice to work.
