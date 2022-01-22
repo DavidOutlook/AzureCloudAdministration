@@ -1,3 +1,7 @@
+// This main template links all other templates together so that PowerShell can deploy everything with one script.
+// Created to link arm templates from collaboration partners GitHub repos.
+// In addition to a collaborative project; shows modularity and reuse to break a large template into smaller files to work with easier.
+
 {
     "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
     "contentVersion": "1.0.0.0",
@@ -6,7 +10,8 @@
     "variables": {},
     "resources": [
         {
-            "name": "linkedTemplate",
+            // Virtual Network 1
+            "name": "linkedTemplateVnet1",
             "type": "Microsoft.Resources/deployments",
             "apiVersion": "2021-04-01",
             "properties": {
@@ -15,7 +20,20 @@
                     "uri": "https://raw.githubusercontent.com/DavidOutlook/AzureCloudAdministration/master/vnet1.json"
                 }
             }
+        },
+        {
+            // Virtual Network 2
+            "name": "linkedTemplateVnet2",
+            "type": "Microsoft.Resources/deployments",
+            "apiVersion": "2021-04-01",
+            "properties": {
+                "mode": "Incremental",
+                "templateLink": {
+                    "uri": "https://raw.githubusercontent.com/DavidOutlook/AzureCloudAdministration/master/vnet2.json"
+                }
+            }
         }
+
     ],
     "outputs": {}
 }
