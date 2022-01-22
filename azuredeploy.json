@@ -30,6 +30,7 @@
                 "mode": "Incremental",
                 "templateLink": {
                     "uri": "https://raw.githubusercontent.com/DavidOutlook/AzureCloudAdministration/master/vnet2.json"
+                    // "relativePath": "filename" // an alternative to uri
                 }
             }
         }
