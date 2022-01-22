@@ -14,7 +14,7 @@ New-AzResourceGroupDeployment `
     -TemplateFile C:\GitHub\MSSAProject\vnet1.json `
     -verbose
 
-#-TemplateUri https://raw.githubusercontent.com/DavidOutlook/MSSA-Project/main/Tier2/Tier2Vnet.json
+# -TemplateUri https://raw.githubusercontent.com/DavidOutlook/MSSA-Project/main/Tier2/Tier2Vnet.json
 
     # Vnet template works.  Custom will not be same as Portal generated template (ex. longer and location is hard-coded w/o a function)
 
