@@ -1,0 +1,48 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "loadBalancers_vmss_quickstart_LB_name": {
+            "value": null
+        },
+        "virtualMachineScaleSets_vmss_quickstart_name": {
+            "value": null
+        },
+        "virtualMachines_vmss_quickstart_754ebfcf_name": {
+            "value": null
+        },
+        "virtualMachines_vmss_quickstart_8222002e_name": {
+            "value": null
+        },
+        "virtualMachines_vmss_quickstart_f833cc06_name": {
+            "value": null
+        },
+        "publicIPAddresses_vmss_quickstart_LB_PIP_name": {
+            "value": null
+        },
+        "virtualNetworks_vmss_quickstartfc22yp6rxmhf4_name": {
+            "value": null
+        },
+        "networkSecurityGroups_vmss_quickstartfc22yp6rxmhf4NSG_name": {
+            "value": null
+        },
+        "publicIPAddresses_vmss_quickstartPipConfig_031f1841_db95_4fa0_ada9_b4a6865dca98_name": {
+            "value": null
+        },
+        "publicIPAddresses_vmss_quickstartPipConfig_1356442a_15a6_451d_9a76_bff585f13481_name": {
+            "value": null
+        },
+        "publicIPAddresses_vmss_quickstartPipConfig_2f024068_c658_43f5_a098_1e9506710e16_name": {
+            "value": null
+        },
+        "networkInterfaces_vmss_quickstartNicConfig01_1356442a_15a6_451d_9a76_bff585f13481_externalid": {
+            "value": null
+        },
+        "networkInterfaces_vmss_quickstartNicConfig01_2f024068_c658_43f5_a098_1e9506710e16_externalid": {
+            "value": null
+        },
+        "networkInterfaces_vmss_quickstartNicConfig01_031f1841_db95_4fa0_ada9_b4a6865dca98_externalid": {
+            "value": null
+        }
+    }
+}
