@@ -17,7 +17,10 @@
             "properties": {
                 "mode": "Incremental",
                 "templateLink": {
-                    "uri": "https://raw.githubusercontent.com/DavidOutlook/AzureCloudAdministration/master/vnet1.json"
+                    "uri": "https://raw.githubusercontent.com/DavidOutlook/AzureCloudAdministration/master/templateVmss.json"
+                },
+                "parametersLink": {
+                    "uri": ""
                 }
             }
         },
