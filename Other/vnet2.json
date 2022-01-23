@@ -6,7 +6,7 @@
             "type": "String",
             "defaultValue": "[resourceGroup().location]"
         },
-        "virtualNetworkName": {
+        "Name": {
             "type": "String",
             "defaultValue": "Vnet2"
         }
@@ -15,7 +15,7 @@
         {
             "type": "Microsoft.Network/VirtualNetworks",
             "apiVersion": "2021-01-01",
-            "name": "[parameters('virtualNetworkName')]",
+            "name": "[parameters('Name')]",
             "location": "[parameters('location')]",
             "properties": {
                 "addressSpace": {
