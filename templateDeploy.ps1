@@ -13,7 +13,7 @@ New-AzResourceGroup `
 New-AzResourceGroupDeployment `
     -Name "DeployTemplate" `
     -ResourceGroupName "Deploy" `
-    -TemplateFile C:\GitHub\AzureCloudAdministration\azuredeploy.json `
+    -TemplateFile C:\GitHub\AzureCloudAdministration\newazuredeploy.json `
     -verbose
 
 # -TemplateUri https://raw.githubusercontent.com/DavidOutlook/MSSA-Project/main/Tier2/Tier2Vnet.json
